@@ -23,8 +23,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"http://localhost:3000",
-		credentials:true,
+		origin: ["http://localhost:3000", "http://localhost:3002", "https://localhost:3000", "https://localhost:3002"],
+		credentials: true,
+		methods: ["GET", "POST", "PUT", "DELETE"],
+		allowedHeaders: ["Content-Type", "Authorization"]
 	})
 )
 
@@ -45,12 +47,21 @@ app.use("/api/v1/payment", paymentRoutes);
 app.use("/api/v1/reach", contactUsRoute);
 
 //def route
-
 app.get("/", (req, res) => {
 	return res.json({
 		success:true,
 		message:'Your server is up and running....'
 	});
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).json({
+        success: false,
+        message: 'Something went wrong!',
+        error: err.message
+    });
 });
 
 app.listen(PORT, () => {

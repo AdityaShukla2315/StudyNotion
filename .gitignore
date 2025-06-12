@@ -1,0 +1,29 @@
+# dependencies
+/node_modules
+/Study-Notion-master/node_modules
+/Study-Notion-master/server/node_modules
+
+# environment variables
+.env
+/Study-Notion-master/server/.env
+
+# production build
+/build
+/Study-Notion-master/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE specific files
+.idea
+.vscode
+*.swp
+*.swo 
