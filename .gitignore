@@ -1,18 +1,33 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment files
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
 # dependencies
 /node_modules
 /Study-Notion-master/node_modules
 /Study-Notion-master/server/node_modules
 
 # environment variables
-.env
 /Study-Notion-master/server/.env
 
-# production build
-/build
-/Study-Notion-master/build
-
 # misc
-.DS_Store
 .env.local
 .env.development.local
 .env.test.local
@@ -23,7 +38,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # IDE specific files
-.idea
-.vscode
 *.swp
 *.swo 

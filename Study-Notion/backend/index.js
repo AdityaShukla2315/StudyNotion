@@ -18,17 +18,21 @@ const PORT = process.env.PORT || 4000;
 
 //database connect
 database.connect();
+
+// CORS middleware - must be before other middleware
+app.use(cors({
+	origin: ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002", "https://localhost:3000", "https://localhost:3001", "https://localhost:3002"],
+	credentials: true,
+	methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+	allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With", "Accept", "Origin"]
+}));
+
+// Handle preflight requests
+app.options('*', cors());
+
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-	cors({
-		origin: ["http://localhost:3000", "http://localhost:3002", "https://localhost:3000", "https://localhost:3002"],
-		credentials: true,
-		methods: ["GET", "POST", "PUT", "DELETE"],
-		allowedHeaders: ["Content-Type", "Authorization"]
-	})
-)
 
 app.use(
 	fileUpload({
