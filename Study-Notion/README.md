@@ -4,9 +4,7 @@
 [![Tech Stack](https://img.shields.io/badge/Tech%20Stack-MERN%20Stack-green?style=for-the-badge&logo=javascript)](https://github.com/AdityaShukla2315/StudyNotion)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-<div align="center">
-  <img src="images/mainpage.png" alt="StudyNotion Main Page" width="800px" />
-</div>
+![Main Page](images/mainpage.png)
 
 ## 📖 Overview
 
