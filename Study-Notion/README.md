@@ -16,6 +16,8 @@ StudyNotion is a fully functional EdTech platform that enables users to create, 
   <img src="images/architecture.png" alt="System Architecture" width="600px" />
 </div>
 
+![Test Architecture](images/architecture.png)
+
 ## 🗄️ Database Schema
 
 <div align="center">
