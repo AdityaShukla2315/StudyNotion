@@ -1,6 +1,6 @@
 # StudyNotion - EdTech Platform 🚀
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-blue?style=for-the-badge&logo=vercel)](https://studynotion-frontend.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-View%20Website-blue?style=for-the-badge&logo=vercel)](https://StudyNotion-frontend.vercel.app/)
 [![Tech Stack](https://img.shields.io/badge/Tech%20Stack-MERN%20Stack-green?style=for-the-badge&logo=javascript)](https://github.com/AdityaShukla2315/StudyNotion)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
@@ -18,16 +18,20 @@ StudyNotion is a fully functional EdTech platform that enables users to create, 
 
 ![Database Schema](images/schema.png)
 
-## ✨ Key Features
+
+## ✨ Key Features & Modern UI
+
 
 ### 🎓 For Students
-- **Course Discovery**: Browse and search through a vast catalog of courses
-- **Wishlist Management**: Save courses for later purchase
+- **Modern Course Catalog**: Browse a visually rich, responsive grid of expertly designed course cards
+- **Wishlist Management**: Save courses for later purchase with interactive heart icons
 - **Progress Tracking**: Monitor learning progress with detailed analytics
 - **Interactive Learning**: Video lessons, assignments, and assessments
 - **Community Features**: Q&A forums, reviews, and ratings
+- **In-app Video Playback**: Watch YouTube playlists and course videos directly in the app
 - **AI Chatbot**: Get instant help and learning guidance
 - **Badge System**: Earn achievements for completing milestones
+
 
 ### 👨‍🏫 For Instructors
 - **Course Creation**: Comprehensive course builder with multimedia support
@@ -36,12 +40,16 @@ StudyNotion is a fully functional EdTech platform that enables users to create, 
 - **Content Management**: Upload videos, documents, and assignments
 - **Revenue Tracking**: Monitor earnings and payment history
 
-### 🔧 Technical Features
+
+### 🔧 Technical & UI/UX Features
 - **Authentication**: JWT-based secure authentication with OTP verification
 - **Payment Integration**: Razorpay payment gateway for course purchases
 - **Media Management**: Cloudinary integration for file storage
-- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Modern Responsive Design**: Mobile-first, dark theme, and expert-level UI with Tailwind CSS
+- **Wishlist & Cart**: Add/remove courses to wishlist with instant feedback
+- **In-app Modals**: Full-screen modals for video playback and course details
 - **Real-time Updates**: Live progress tracking and notifications
+- **Expertly Designed Footer**: Modern, accessible, and information-rich footer with social links
 
 ## 🛠️ Tech Stack
 
@@ -68,7 +76,7 @@ StudyNotion is a fully functional EdTech platform that enables users to create, 
 ## 📁 Project Structure
 
 ```
-Study-Notion/
+StudyNotion/
 ├── 📁 client/                    # React Frontend
 │   ├── 📁 public/               # Static assets
 │   ├── 📁 src/                  # Source code
@@ -144,13 +152,17 @@ Study-Notion/
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:5000
 
+
 ## 📱 Screenshots
 
 ### Main Dashboard
 ![Dashboard](images/mainpage.png)
 
-### Course Management
-![Course Management](images/architecture.png)
+### Modern Course Catalog
+![Course Catalog](images/mainpage.png)
+
+### Course Details Page
+![Course Details](images/architecture.png)
 
 ### Database Schema
 ![Database](images/schema.png)
@@ -173,6 +185,14 @@ Study-Notion/
 - `GET /api/v1/profile` - Get user profile
 - `PUT /api/v1/profile` - Update profile
 - `POST /api/v1/profile/change-password` - Change password
+
+
+## 💡 Recent Improvements
+
+- Redesigned Courses and CourseDetails pages for a modern, expert look
+- Added interactive wishlist and in-app video playback
+- Footer redesigned for clarity, accessibility, and visual polish
+- Improved responsiveness and mobile experience
 
 ## 🤝 Contributing
 
